@@ -25,4 +25,5 @@ dependencies {
     feature project(':features:details')
     api "com.android.support:appcompat-v7:${rootProject.supportLib}"
     api 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:multidex:1.0.2'
 }

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pl.elpassion.instantapptest.features.details">
 
-    <application>
+    <application android:name="android.support.multidex.MultiDexApplication">
         <activity
             android:name=".DetailsActivity"
             android:label="@string/details_title"
