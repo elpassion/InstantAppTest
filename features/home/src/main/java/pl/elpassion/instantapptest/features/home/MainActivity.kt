@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         mainButton.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://elpassion.com/detils")).apply {
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://elpassion.com/details")).apply {
                 `package` = packageName
                 addCategory(Intent.CATEGORY_BROWSABLE)
             })
