@@ -1,6 +1,24 @@
 apply plugin: 'com.android.instantapp'
 
+android {
+    compileSdkVersion rootProject.compileSdk
+    buildToolsVersion rootProject.buildTools
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkInstant
+        targetSdkVersion rootProject.compileSdk
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+        multiDexEnabled = rootProject.multiDex
+    }
+    buildTypes {
+        release {}
+        debug {}
+    }
+}
+
 dependencies {
-    implementation project(':featurehome')
-    implementation project(':base')
+    implementation project(':features:base')
+    implementation project(':features:home')
+    implementation project(':features:details')
 }

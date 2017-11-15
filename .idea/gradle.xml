@@ -9,8 +9,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/base" />
-            <option value="$PROJECT_DIR$/featurehome" />
+            <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/base" />
+            <option value="$PROJECT_DIR$/features/details" />
+            <option value="$PROJECT_DIR$/features/home" />
             <option value="$PROJECT_DIR$/instantapp" />
           </set>
         </option>

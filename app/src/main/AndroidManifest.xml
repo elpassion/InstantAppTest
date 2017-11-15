@@ -1,2 +1,4 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="pl.elpassion.instantapptest.app" />
+    xmlns:instant="http://schemas.android.com/instantapps"
+    package="pl.elpassion.instantapptest.features.home"
+    android:targetSandboxVersion="2" />

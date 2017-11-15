@@ -1,11 +1,10 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.feature'
 
 android {
     compileSdkVersion rootProject.compileSdk
     buildToolsVersion rootProject.buildTools
 
     defaultConfig {
-        applicationId "pl.elpassion.instantapptest"
         minSdkVersion rootProject.minSdk
         targetSdkVersion rootProject.compileSdk
         versionCode rootProject.versionCode
@@ -16,9 +15,14 @@ android {
         release {}
         debug {}
     }
+
+    baseFeature true
 }
 
 dependencies {
-    implementation project(':features:home')
-    implementation project(':features:details')
+    application project(':app')
+    feature project(':features:home')
+    feature project(':features:details')
+    api "com.android.support:appcompat-v7:${rootProject.supportLib}"
+    api 'com.android.support.constraint:constraint-layout:1.0.2'
 }

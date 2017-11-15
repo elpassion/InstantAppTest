@@ -1,11 +1,11 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.feature'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion rootProject.compileSdk
     buildToolsVersion rootProject.buildTools
-
     defaultConfig {
-        applicationId "pl.elpassion.instantapptest"
         minSdkVersion rootProject.minSdk
         targetSdkVersion rootProject.compileSdk
         versionCode rootProject.versionCode
@@ -19,6 +19,6 @@ android {
 }
 
 dependencies {
-    implementation project(':features:home')
-    implementation project(':features:details')
+    implementation project(':features:base')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
