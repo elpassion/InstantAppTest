@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">InstantAppTest</string>
+    <string name="home_title">Home screen</string>
+    <string name="details_title">Details screen</string>
 </resources>
