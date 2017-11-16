@@ -1,8 +1,4 @@
-package pl.elpassion.instantapptest
-
-import org.junit.Test
-
-import org.junit.Assert.*
+package pl.elpassion.instantappsample
 
 /**
  * Example local unit test, which will execute on the development machine (host).

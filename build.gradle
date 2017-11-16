@@ -27,8 +27,8 @@ ext {
     compileSdk = 26
     minSdk = 19
     minSdkInstant = 21
-    versionCode = 1
-    versionName = "1.0"
+    versionCode = 3
+    versionName = "3.0"
     supportLib = '27.0.0'
     multiDex = true
 }

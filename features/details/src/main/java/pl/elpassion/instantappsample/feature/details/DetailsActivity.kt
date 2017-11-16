@@ -1,7 +1,7 @@
-package pl.elpassion.instantapptest.features.details
+package pl.elpassion.instantappsample.feature.details
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 
 class DetailsActivity : AppCompatActivity() {
 
