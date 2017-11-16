@@ -14,54 +14,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+            <intent-filter
+                android:autoVerify="true"
+                android:order="1">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="hubinstantapp.herokuapp.com"
+                    android:pathPrefix="/home"
+                    android:scheme="https" />
+                <data
+                    android:host="hubinstantapp.herokuapp.com"
+                    android:pathPrefix="/home"
+                    android:scheme="http" />
+            </intent-filter>
+
             <meta-data
                 android:name="default-url"
                 android:value="https://hubinstantapp.herokuapp.com/home" />
-
-            <intent-filter android:order="1">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:scheme="https"
-                    android:host="hubinstantapp.herokuapp.com"
-                    android:pathPrefix="/home" />
-            </intent-filter>
-            <intent-filter android:order="1">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:scheme="https"
-                    android:host="hubinstantapp.herokuapp.com"
-                    android:pathPrefix="/home" />
-            </intent-filter>
-            <intent-filter android:order="1">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:scheme="http"
-                    android:host="hubinstantapp.herokuapp.com"
-                    android:pathPrefix="/home" />
-            </intent-filter>
-            <intent-filter android:order="1">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:scheme="http"
-                    android:host="hubinstantapp.herokuapp.com"
-                    android:pathPrefix="/home" />
-            </intent-filter>
 
         </activity>
     </application>
