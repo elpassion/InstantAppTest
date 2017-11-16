@@ -7,22 +7,49 @@
             android:name=".DetailsActivity"
             android:label="@string/details_title"
             android:theme="@style/AppTheme">
-            <intent-filter
-                android:autoVerify="true"
-                android:order="2">
+            <intent-filter android:order="2">
                 <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="elpassion.com"
-                    android:pathPrefix="/details"
-                    android:scheme="https" />
+                    android:scheme="https"
+                    android:host="hubinstantapp.herokuapp.com"
+                    android:pathPrefix="/details" />
+            </intent-filter>
+            <intent-filter android:order="2">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
-                    android:host="elpassion.com"
-                    android:pathPrefix="/details"
-                    android:scheme="http" />
+                    android:scheme="https"
+                    android:host="hubinstantapp.herokuapp.com"
+                    android:pathPrefix="/details" />
+            </intent-filter>
+            <intent-filter android:order="2">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="hubinstantapp.herokuapp.com"
+                    android:pathPrefix="/details" />
+            </intent-filter>
+            <intent-filter android:order="2">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="hubinstantapp.herokuapp.com"
+                    android:pathPrefix="/details" />
             </intent-filter>
         </activity>
     </application>
